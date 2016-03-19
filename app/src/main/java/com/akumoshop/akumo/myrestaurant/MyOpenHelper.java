@@ -21,7 +21,8 @@ public class MyOpenHelper extends SQLiteOpenHelper{
     private static final String create_food_table = "create table foodTABLE (" +
             "_id integer primary key, " +
             "Food text, " +
-            "Price text);";
+            "Price text," +
+            "Source text);";
 
     public MyOpenHelper(Context context) {
         super(context, database_name, null, database_version);
